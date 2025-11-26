@@ -1,12 +1,12 @@
 package ru.user;
 
 public class User {
-    String userName;
-    String description;
-    String birthday;
-    String dataOfRegistration;
-    String phoneNumber;
-    String lastSeen;
+    public String userName;
+    public String description;
+    public String birthday;
+    public String dataOfRegistration;
+    public String phoneNumber;
+    public String lastSeen;
     public User(String userName, String lastSeen, String description, String dataOfRegistration, String phoneNumber, String birthday) {
         this.userName = userName;
         this.lastSeen = lastSeen;
