@@ -15,6 +15,7 @@ public class UserAndGroupMessage extends Message {
 
     public static UserAndGroupMessage[] getAllMessages() {
         UserAndGroupMessage[] messages = {new UserAndGroupMessage("Тимлид Анита", "анита, когда зарплата", "25 ноября", "18:01", "Вы"),
+                //добавление сообщений
                 new UserAndGroupMessage("Тимлид Анита", "не заслужила", "25 ноября", "18:03", "Анита"),
                 new UserAndGroupMessage("Тимлид Анита", "да я в полицию пойду", "25 ноября", "18:04", "Вы"),
                 new UserAndGroupMessage("Тимлид Анита", "Да дааа", "25 ноября", "18:06", "Анита"),
