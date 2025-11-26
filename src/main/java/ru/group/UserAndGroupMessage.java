@@ -1,6 +1,8 @@
 package ru.group;
 
-public class UserAndGroupMessage extends Message{
+import ru.service.Message;
+
+public class UserAndGroupMessage extends Message {
     protected String fromWhom;
     public UserAndGroupMessage(String chatName, String name, String date, String time, String fromWhom) {
         super(chatName, name, date, time);
