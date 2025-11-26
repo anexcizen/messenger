@@ -4,7 +4,7 @@ public class Group {
     private String groupName;
     private int countOfUsers;
     private String[] members;
-
+//добавление геттеров
     public String getGroupName() {
         return groupName;
     }
