@@ -36,6 +36,7 @@ public class Main {
 
         boolean flag = true;
         while (flag) {
+            System.out.println("=============================");
             System.out.println("Введите название канала, группы или лички, куда хотите зайти. exit - выйти из программы");
             String answer = scanner.nextLine();
             if (answer.equals("exit")) {
