@@ -13,8 +13,12 @@ public class Group {
         return countOfUsers;
     }
 
-    public String[] getMembers() {
-        return members;
+    public String getMembers() {
+        String membersString = "";
+        for (String x : members) {
+            membersString += x + " ";
+        }
+        return membersString;
     }
 
     public Group(String groupName, int countOfUsers, String[] members) {
