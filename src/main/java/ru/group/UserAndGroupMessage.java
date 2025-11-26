@@ -3,10 +3,14 @@ package ru.group;
 import ru.service.Message;
 
 public class UserAndGroupMessage extends Message {
-    protected String fromWhom;
+    private String fromWhom;
     public UserAndGroupMessage(String chatName, String name, String date, String time, String fromWhom) {
         super(chatName, name, date, time);
         this.fromWhom = fromWhom;
+    }
+
+    public String getFromWhom() {
+        return fromWhom;
     }
 
     public static UserAndGroupMessage[] getAllMessages() {
