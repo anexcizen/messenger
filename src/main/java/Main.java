@@ -19,19 +19,19 @@ public class Main {
 
         System.out.println(GRAY + "\nВы - Диана" + WHITE);
 
-        System.out.println(LIGHTBLUE + "=============================" + WHITE);
+        System.out.println(LIGHTBLUE + "====================================================================================================================" + WHITE);
         System.out.println("Список каналов:");
         for (ChannelChat x : Database.news) {
             System.out.println(PINK + x.getName());
         }
 
-        System.out.println(LIGHTBLUE + "=============================" + WHITE);
+        System.out.println(LIGHTBLUE + "====================================================================================================================" + WHITE);
         System.out.println("Список групп:");
         for (Group x : Database.groups) {
             System.out.println(PINK + x.getGroupName());
         }
 
-        System.out.println(LIGHTBLUE + "=============================" + WHITE);
+        System.out.println(LIGHTBLUE + "====================================================================================================================" + WHITE);
         System.out.println("Список личных чатов:");
         for (UserChat x : Database.chats) {
             System.out.println(PINK + x.getName());
@@ -41,7 +41,7 @@ public class Main {
 
         boolean flag = true;
         while (flag) {
-            System.out.println(LIGHTBLUE + "=============================" + WHITE);
+            System.out.println(LIGHTBLUE + "====================================================================================================================" + WHITE);
             System.out.println(GRAY + "Введите название канала, группы или лички, куда хотите зайти. exit - выйти из программы");
             String answer = scanner.nextLine();
             if (answer.equals("exit")) {
