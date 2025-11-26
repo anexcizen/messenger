@@ -6,10 +6,10 @@ public class User {
     String birthday;
     String dataOfRegistration;
     String phoneNumber;
-    String lastseen;
-    public User(String userName, String lastseen, String description, String dataOfRegistration, String phoneNumber, String birthday) {
+    String lastSeen;
+    public User(String userName, String lastSeen, String description, String dataOfRegistration, String phoneNumber, String birthday) {
         this.userName = userName;
-        this.lastseen = lastseen;
+        this.lastSeen = lastSeen;
         this.description = description;
         this.dataOfRegistration = dataOfRegistration;
         this.phoneNumber = phoneNumber;
