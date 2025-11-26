@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Вы - печенька");
+        System.out.println("Вы - Диана");
 
         System.out.println("=============================");
         System.out.println("Список каналов:");
