@@ -8,7 +8,7 @@ public class ChatHistory {
         for (int i = 0; i < Database.news.length; ++i) {
             if (Database.news[i].getName().equals(name)) {
                 ChannelMessages[] messages = ChannelMessages.getAllNews();
-                System.out.println(name + "\n");
+                System.out.println(name + "\nКоличество подписчиков: " + Database.news[i].getSubscribers() + "\n");
                 for (int j = 0; j < messages.length; ++j) {
                     if (name.equals(messages[j].chatName)) {
                         System.out.println(messages[j].date + " " + messages[j].time + ": " + messages[j].text + "\n");
