@@ -2,14 +2,13 @@ package ru.group;
 
 public class Group {
     private String groupName;
-    private String countOfUsers;
-    private String[] users;
+    private int countOfUsers;
+    private String[] members;
 
-    public Group(String groupName, String countOfUsers, String[] users) {
+    public Group(String groupName, int countOfUsers, String[] members) {
         this.groupName = groupName;
-        this.countOfUsers = countOfUsers;
-        this.users = users;
+        countOfUsers = members.length;
+        this.members = members;
     }
-
 }
 
