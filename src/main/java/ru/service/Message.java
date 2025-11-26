@@ -1,3 +1,5 @@
+package ru.service;
+
 public class Message {
     String chatName;
     String text;
