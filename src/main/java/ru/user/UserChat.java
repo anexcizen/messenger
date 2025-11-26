@@ -5,8 +5,8 @@ public class UserChat {
     private String info;
 
     public UserChat(User person) {
-        name = person.userName;
-        info = person.lastSeen;
+        name = person.getUserName();
+        info = person.getLastSeen();
     }
 
     public String getName() {
