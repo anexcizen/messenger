@@ -23,7 +23,7 @@ public class Group {
 
     public Group(String groupName, int countOfUsers, String[] members) {
         this.groupName = groupName;
-        countOfUsers = members.length;
+        this.countOfUsers = members.length;
         this.members = members;
     }
 }
