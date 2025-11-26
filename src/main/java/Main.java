@@ -1,25 +1,47 @@
 import ru.service.*;
+
 import ru.channel.*;
+
 import ru.group.*;
+
 import ru.user.*;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Вы - Диана");
+
+        System.out.println("=============================");
         System.out.println("Список каналов:");
         for (ChannelChat x : Database.news) {
-            System.out.println(x.name);
+            System.out.println(x.getName());
         }
+
+        System.out.println("=============================");
         System.out.println("Список групп:");
-        for (GroupChat x : Database.groups) {
-            System.out.println(x.name);
+        for (Group x : Database.groups) {
+            System.out.println(x.getGroupName());
         }
-        System.out.println("Личных чатов:");
+
+        System.out.println("=============================");
+        System.out.println("Список личных чатов:");
         for (UserChat x : Database.chats) {
-            System.out.println(x.name);
+            System.out.println(x.getName());
         }
+
         System.out.println();
-        //new ChatHistory("Тимлид Анита");
+
+        System.out.println("Введите название канала, группы или лички, куда хотите зайти. exit - выйти из программы");
+        boolean flag = true;
+        while (flag) {
+            String answer = scanner.nextLine();
+            if (answer.equals("exit")) {
+                flag = false;
             }
         }
+
     }
 }
