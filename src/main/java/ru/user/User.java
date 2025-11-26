@@ -1,15 +1,15 @@
 package ru.user;
 
 public class User {
-    String userName;
-    String description;
-    String birthday;
-    String dataOfRegistration;
-    String phoneNumber;
-    String lastseen;
-    public User(String userName, String lastseen, String description, String dataOfRegistration, String phoneNumber, String birthday) {
+    public String userName;
+    public String description;
+    public String birthday;
+    public String dataOfRegistration;
+    public String phoneNumber;
+    public String lastSeen;
+    public User(String userName, String lastSeen, String description, String dataOfRegistration, String phoneNumber, String birthday) {
         this.userName = userName;
-        this.lastseen = lastseen;
+        this.lastSeen = lastSeen;
         this.description = description;
         this.dataOfRegistration = dataOfRegistration;
         this.phoneNumber = phoneNumber;
