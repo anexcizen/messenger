@@ -4,11 +4,11 @@ public class Group {
     private String groupName;
     private int countOfUsers;
     private String[] members;
-//добавление геттеров
+//добавление геттера
     public String getGroupName() {
         return groupName;
     }
-
+    // добавление геттера
     public int getCountOfUsers() {
         return countOfUsers;
     }
