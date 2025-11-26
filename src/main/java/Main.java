@@ -41,7 +41,7 @@ public class Main {
             if (answer.equals("exit")) {
                 flag = false;
             }
+            new ChatHistory(answer);
         }
-
     }
 }
