@@ -32,7 +32,11 @@ public class ChatHistory {
         for (int i = 0; i < Database.chats.length; ++i) {
             if (Database.chats[i].getName().equals(name)) {
                 UserAndGroupMessage[] messages = UserAndGroupMessage.getAllMessages();
-                System.out.println(name + "\nПоследний раз в сети: " + Database.chats[i].getInfo() + "\n");
+                if (Database.chats[i].getInfo().equals("В сети")) {
+                    System.out.println(name + "\n" + Database.chats[i].getInfo() + "\n");
+                } else {
+                    System.out.println(name + "\nПоследний раз в сети: " + Database.chats[i].getInfo() + "\n");
+                }
                 for (int j = 0; j < messages.length; ++j) {
                     if (name.equals(messages[j].chatName)) {
                         System.out.println(messages[j].getFromWhom() + " " + messages[j].date + " " + messages[j].time + ": " + messages[j].text + "\n");
